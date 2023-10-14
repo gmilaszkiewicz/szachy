@@ -1,3 +1,4 @@
+#ćwiczenia z rozdziału 15
 def ile_pol(n):
     return n*n
 
