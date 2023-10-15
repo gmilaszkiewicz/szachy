@@ -10,4 +10,5 @@
 Ćwiczenie 7. Zestaweinei liczby pól atakowanych przez hetmana <br />
 
 ZADANIA DODATKOWE <br />
-Zadanie 1. Ile pól atakuje król
+Zadanie 1. Ile pól atakuje król <br />
+Zadanie 2. Ile pól atakuje skoczek

@@ -40,6 +40,18 @@ def ile_krol(n,x,y):
     else:
         return 9
 
+def ile_skoczek(n,x,y):
+    liczbaPol = 0
+    if(x+2<=n and x+2>0 and y+1<=n and y+1>0): liczbaPol+=1
+    if(x+2<=n and x+2>0 and y-1<=n and y-1>0): liczbaPol+=1
+    if(x-2<=n and x-2>0 and y+1<=n and y+1>0): liczbaPol+=1
+    if(x-2<=n and x-2>0 and y-1<=n and y-1>0): liczbaPol+=1
+    if(x+1<=n and x+1>0 and y+2<=n and y+2>0): liczbaPol+=1
+    if(x+1<=n and x+1>0 and y-2<=n and y-2>0): liczbaPol+=1
+    if(x-1<=n and x-1>0 and y+2<=n and y+2>0): liczbaPol+=1
+    if(x-1<=n and x-1>0 and y-2<=n and y-2>0): liczbaPol+=1
+    return liczbaPol
+
 n = int(input("Podaj jeden wymiar szachownicy z zakresu <2,32>: "))
 x = int(input("Podaj współrzędne X figury: "))
 y = int(input("Podaj współrzędne Y figury: "))
@@ -55,3 +67,4 @@ else:
     print("Ile pól atakuje hetman", ile_hetman(n,x,y))
     zestawienie_hetman(n,n)
     print("Ile pól atakuje król", ile_krol(n,x,y))
+    print("Ile pól atakuje skoczek", ile_skoczek(n,x,y))
